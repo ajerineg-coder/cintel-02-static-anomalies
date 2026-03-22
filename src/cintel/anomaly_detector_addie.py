@@ -1,7 +1,7 @@
 """
 anomaly_detector_case.py - Project script (example).
 
-Author: Denise Case
+Author: Addie Gemmell
 Date: 2026-03-07
 
 Static Data
@@ -56,8 +56,8 @@ ARTIFACTS_DIR: Final[Path] = ROOT_DIR / "artifacts"
 
 # === DECLARE GLOBAL CONSTANTS FOR FILE PATHS ===
 
-DATA_FILE: Final[Path] = DATA_DIR / "clinic_data_case.csv"
-OUTPUT_FILE: Final[Path] = ARTIFACTS_DIR / "anomalies_case.csv"
+DATA_FILE: Final[Path] = DATA_DIR / "clinic_data_addie.csv"
+OUTPUT_FILE: Final[Path] = ARTIFACTS_DIR / "anomalies_addie.csv"
 
 
 # === DEFINE THE MAIN FUNCTION ===
@@ -114,7 +114,7 @@ def main() -> None:
     LOG.info("Studying children's ages and heights to find anomalies...")
 
     # x is age in years, so 16 is the upper limit for kids
-    MAX_REASONABLE_X_VALUE: Final[float] = 16.0
+    MAX_REASONABLE_X_VALUE: Final[float] = 20.00
 
     # y is height in inches, so maybe 6 feet (72 inches) is a reasonable upper limit
     MAX_REASONABLE_Y_VALUE: Final[float] = 72.0
